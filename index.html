@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/dm.png">
+    <title>Devesh Mande Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <script src="matter.js" defer></script>
+</head>
+
+
+<body>
+  
+  
+  <div class="ani">
+    <div class="absolute inset-0" id="wrapper-canvas"></div>
+    </div>
+
+    <div class="bkg">
+
+</section>
+    <nav id="desktop-nav">
+        <div class=" logo"><img src="./assets/dm1.png" alt="Devesh Logo" class="iconn" ></div>
+        <div>
+            <ul class="nav-links">
+                <li><a class="link-one" href="#about">About</a></li>
+                <li><a class="link-one" href="#experience">Experience</a></li>
+                <li><a class="link-one" href="#projects">Projects</a></li>
+                <li><a class="link-one" href="#contact">Contact</a></li>
+            </ul>
+        </div> 
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Devesh Mande</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+            <li><a class="link-one" href="#about" onclick="toggleMenu()" >About</a></li>
+            <li><a class="link-one" href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a class="link-one" href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a class="link-one" href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    
+      <section id="profile">
+
+        <audio id="bg-music" autoplay loop>
+          <source src="./assets/Om-Namah-Shivay.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+      </audio>
+
+
+        <div class="section__pic-container1">
+            <img src="assets\profile-pic.jpg" alt="Devesh Mande Profile Picture" >
+        </div>
+
+        <div class="section__text">
+
+
+            <p class="section__text__p11">Hello, I'm <span class="input"> </span></p>
+            
+            <h1 class="pointer-events-none title1">Devesh Mande</h1>
+
+            <div class="btn-container">
+                <button
+                  class="pointer-events-none btn btn-color-2"
+                  onclick="window.open('./assets/resume-example.pdf')"
+                >
+                  Download CV
+                </button>
+                <button class="pointer-events btn btn-color-1" onclick="location.href='./#contact'">
+                  Contact Me
+                </button>
+              </div>
+              <div id="socials-container">
+                <img
+                  src="./assets/linkedinnn.png"
+                  alt="My LinkedIn profile"
+                  class="icon"
+                  onclick="location.href='https://www.linkedin.com/in/deveshmande'"
+                />
+                <img
+                  src="./assets/githubb.png"
+                  alt="My Github profile"
+                  class="icon"
+                  onclick="location.href='https://github.com/Devesh-Mande '"
+                />
+              </div>
+        </div>
+
+        <img src="./assets/arrow1.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#about'"/>
+
+ </section>
+
+</div>
+
+<!-- about Section -->
+
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.jpg" 
+               alt="profile picture" 
+               class="about-pic"
+               style="filter: grayscale(10)"
+               
+           />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="experience icon" class="icon1">
+              <h3>Graduate</h3>
+              <p>B-Tech (CSE) <br>2020-2024<br> MGM's JNEC <br> CGPA:8.17 </p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="education icon" class="icon1">
+              <h3>Higher Secondary</h3>
+              <p>2019-2020<br> RMV College <br> Percentage:71.85% </p>              
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+ 
+                Hi, I’m Devesh, a Computer Science and Engineering graduate with a passion for Development Technology and data analytics. I specialize in Python, Java, MySQL, Power BI, Excel, Good in creating websites and eagerly learning AI. 
+                    <br>Apart from coding, I enjoy cycling on challenging hillside terrains. I have a strong passion for learning, constantly seeking new ideas and perspectives. 
+
+              <br>I have successfully worked on projects in Python, Web Development, and Data Analytics, Gaining hands-on experience in building efficient and impactful solutions. Feel free to explore my work, and don’t hesitate to reach out if you’d like to collaborate!
+          </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" 
+           alt="Arrow icon" 
+           class="icon arrow"
+           onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Tech Mahindra</h2>
+              <h3><img src="./assets//checkmark.png" alt="Experience-icon" class="icon2"> Project Intern</h3>
+              <p class="text-container"> Tech Mahindra is an Indian Multinational IT Services and Consulting Company. <br></p>
+
+              <div class="exp-margin">
+              <p class="text-container" > • Contributed to Building India’s own Large Language Model (LLM-INDUS) from the Ground up </p>
+              <p class="text-container"> • Project Indus is our initiative to honor India's diverse linguistic heritage, with a focus on Hindi and 37 dialects, leveraging LLM technology </p>
+              <p class="text-container"> • Gathered, curated, and refined data for the pre-training of models, ensuring uniqueness and structured organization. </p>
+              <p class="text-container"> • Additionally, worked with AI models such as LLaMA, Whisper AI, and LLaMA 2, training datasets and effectively utilizing them for enhanced performance </p>
+              </div>
+              <div class="btn-container">
+                <button
+                class="btn btn-color-3"
+                onclick="window.open('./assets/Devesh Mande Internship Letter O.pdf')"
+              >
+                Certificate
+              </button>
+              </div>
+            </div>
+            <!-- <div class="details-container">
+              <h2 class="experience-sub-title">AI Variant</h2>
+              <h3><img src="./assets//checkmark.png" alt="Experience-icon" class="icon2"> Project Intern</h3>
+              <p class="text-container"> Tech Mahindra is an Indian Multinational Information Technology Services and Consulting Company. <br></p>
+              <p class="text-container"> - Contributed to Building India’s own Large Language Model (LLM-INDUS) from the Ground up </p>
+              <p class="text-container"> - Project Indus is our initiative to honor India's diverse linguistic heritage, with a focus on Hindi and 37 dialects, leveraging LLM technology </p>
+              <p class="text-container"> - Gathered, curated, and refined data for the pre-training of models, ensuring uniqueness and structured organization. </p>
+              <p class="text-container"> - Additionally, worked with AI models such as LLaMA, Whisper AI, and LLaMA 2, training datasets and effectively utilizing them for enhanced performance </p>
+              <div class="btn-container">
+                <button
+                class="btn btn-color-3"
+                onclick="window.open('./assets/Devesh-Abhijeet-Mande-Internship.pdf')">
+                Certificate
+              </button>
+              </div>
+            </div> -->
+           </div>
+          </div>
+          
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#skills'"/>
+    </section>
+
+<!-- Skills Section -->
+    <section id="skills">
+      <p class="section__text__p1">Know My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title"></h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySql</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PowerBi</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Excel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Html Css Js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R Lang</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        
+        </div>
+        <p class="section__text__p1">Life Beyond Code</p>
+        <h1 class="title">Intrest</h1>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title"></h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Cycling</h3>
+                <!-- <p>Experienced</p> -->
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Swimming</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Trekking</h3>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Reading </h3>
+              </div>
+            </article>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    
+<!-- Projects Section -->
+
+
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-containerr color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project1.png"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Student Campus Edge</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-3 project-btn"
+            onclick="location.href='https://github.com/Devesh-Mande/Student-Campus-Edge.git'"
+          >
+            Github
+          </button>
+
+        </div>
+      </div>
+      <div class="details-containerr color-container">
+        <div class="article-container">
+          <img
+            src="./assets/project2.png"
+            alt="Project 2"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Vehicle Counting Model</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-3 project-btn"
+            onclick="location.href='https://github.com/Devesh-Mande/Vehicle-Counting-Model-Project.git'"
+          >
+            Github
+          </button>
+
+        </div>
+      </div>
+      <div class="details-containerr color-container">
+        <div class="article-container">
+          <img
+            src="./assets/project3.png"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">E-Learning Book App</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-3 project-btn"
+            onclick="location.href='https://github.com/Devesh-Mande/E-Learning-Book-App.git'"
+          >
+            Github
+          </button>
+
+        </div>
+      </div>
+      <div class="details-containerr color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project4.png"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Superstore Dashboard</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-3 project-btn"
+            onclick="location.href='https://github.com/Devesh-Mande/Global-Superstore-Dashboard.git'"
+          >
+            Github
+          </button>
+
+        </div>
+      </div>
+      <div class="details-containerr color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project5.png"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Adventure Works Dash.</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-3 project-btn"
+            onclick="location.href='https://github.com/Devesh-Mande/Adventure_Works.git'"
+          >
+            Github
+          </button>
+
+        </div>
+      </div>
+      <div class="details-containerr color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project6.png"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Finance Dashboard</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-3 project-btn"
+            onclick="location.href='https://github.com/Devesh-Mande/Finance-Dashboard.git'"
+          >
+            Github
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+</section>
+
+<!-- --------------------------------------------------------- Dowm Footer------------------------------------------------------------- -->
+<div class="bkg">
+
+    <section id="contact">
+      <p class="section__text__pp1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <a href="mailto:deveshmande2405@gmail.com">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+          </a>
+          <p><a href="mailto:deveshmande2405@gmail.com">deveshmande2405@gmail.com</a></p>
+        </div>
+        
+        <div class="contact-info-container">
+          
+          <a href="https://www.linkedin.com/in/deveshmande" target="_blank">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+        </a>
+
+          <p><a href="https://www.linkedin.com/in/deveshmande">LinkedIn</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <a href="https://github.com/Devesh-Mande" target="_blank">
+            <img src="./assets/github.png" alt="Github icon" class="icon contact-icon">
+        </a>
+          <p><a href="https://github.com/Devesh-Mande">Github</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <a href="https://www.instagram.com/lldeveshmandell" target="_blank">
+            <img src="./assets/Instagram.png" alt="LinkedIn icon" class="icon contact-icon">
+        </a>
+          <p><a href="https://www.instagram.com/lldeveshmandell">Instagram</a></p>
+        </div>
+        
+      </div>
+
+      <div class="contact-info-container">
+        <a href="https://www.google.com/maps/place/Aurangabad,+Maharashtra" target="_blank">
+          <img src="./assets/map.png" alt="Map icon" class="icon contact-icon">
+      </a>
+        <p><a href="https://www.google.com/maps/place/Aurangabad,+Maharashtra">Chhatrapati Sambhajinagar, Maharashtra</a></p>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#desktop-nav">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="cp"> 
+      <p>Copyright &#169; 2025 Devesh Mande. All Rights Reserved.</p>
+    </div>
+
+    </footer>
+  </div>
+
+  <!-- typed js for typing effect -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var typed = new Typed(".input", {
+            strings: ["","Software Engineer","Data Analyst", "Web Developer"],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop: true,
+            showCursor: false  // Hide blinking cursor (optional)
+        });
+    });
+</script>
+
+
+
+
+  </script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+<script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      var audio = document.getElementById("bg-music");
+
+      function checkScroll() {
+          var profileSection = document.getElementById("profile");
+          var rect = profileSection.getBoundingClientRect();
+          var isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+          if (isVisible) {
+              audio.play();
+          } else {
+              audio.pause();
+          }
+      }
+
+      window.addEventListener("scroll", checkScroll);
+  });
+</script>
+
+
+
+</body>
+
+</html>

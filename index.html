@@ -22,6 +22,10 @@
 
 </section>
     <nav id="desktop-nav">
+                <audio id="bg-music" autoplay loop>
+          <source src="./assets/Om-Namah-Shivay.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+      </audio>
         <div class=" logo"><img src="./assets/dm1.png" alt="Devesh Logo" class="iconn" ></div>
         <div>
             <ul class="nav-links">
@@ -54,10 +58,7 @@
     
       <section id="profile">
 
-        <audio id="bg-music" autoplay loop>
-          <source src="./assets/Om-Namah-Shivay.mp3" type="audio/mp3">
-          Your browser does not support the audio element.
-      </audio>
+
 
 
         <div class="section__pic-container1">
@@ -587,7 +588,7 @@
       var audio = document.getElementById("bg-music");
 
       function checkScroll() {
-          var profileSection = document.getElementById("profile");
+          var profileSection = document.getElementById("desktop-nav");
           var rect = profileSection.getBoundingClientRect();
           var isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
 

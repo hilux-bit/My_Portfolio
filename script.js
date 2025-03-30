@@ -6,23 +6,23 @@ function toggleMenu(){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    let audio = document.getElementById("bg-music");
+    var audio = document.getElementById("bg-music");
 
-    function checkVisibility() {
-        let profileSection = document.getElementById("profile");
-        let rect = profileSection.getBoundingClientRect();
-        let isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+    function checkScroll() {
+        var profileSection = document.getElementById("profile");
+        var rect = profileSection.getBoundingClientRect();
+        var isVisible = rect.top < window.innerHeight && rect.bottom > 0;
 
         if (isVisible) {
             if (audio.paused) {
-                audio.play().catch(error => console.log("Autoplay blocked:", error));
+                audio.play().catch(err => console.log("Autoplay blocked:", err));
             }
         } else {
             audio.pause();
         }
     }
 
-    window.addEventListener("scroll", checkVisibility);
-    checkVisibility(); // Initial check when page loads
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Page load झाल्यावरही check करेल
 });
 

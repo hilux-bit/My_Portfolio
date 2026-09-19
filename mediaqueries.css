@@ -117,3 +117,133 @@
     }
   }
   
+
+  /* ==============================
+   MOBILE CONTACT + FOOTER FIX
+   ============================== */
+
+@media screen and (max-width: 600px) {
+
+    /* Contact section */
+    #contact {
+        height: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 3rem 1rem 2rem;
+    }
+
+    .contact-info-upper-container {
+        width: 100%;
+        max-width: 340px;
+        margin: 1.5rem auto;
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-radius: 1rem;
+    }
+
+    .contact-info-container {
+        width: 100%;
+        margin: 0.5rem 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 0.7rem;
+        text-align: center;
+    }
+
+    .contact-info-container p {
+        font-size: 0.9rem;
+        word-break: break-word;
+    }
+
+    .contact-info-container a {
+        text-decoration: none;
+    }
+
+
+    /* Location */
+    #contact > .contact-info-container {
+        width: 100%;
+        margin: 1rem auto 0;
+        justify-content: center;
+    }
+
+
+    /* Footer */
+    footer {
+        height: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 1.5rem 1rem 1rem;
+
+        background-color: rgb(63, 62, 62);
+    }
+
+
+    /* Footer navigation */
+    footer nav {
+        height: auto;
+        margin: 0 0 1.5rem;
+    }
+
+    footer .nav-links {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 0.7rem 1.2rem;
+    }
+
+    footer .nav-links li {
+        list-style: none;
+    }
+
+    footer .nav-links li a {
+        font-size: 0.9rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    footer .nav-links li a:hover {
+        color: aqua;
+        text-decoration: none;
+    }
+
+
+    /* Copyright */
+    .cp {
+        width: 100%;
+        padding-top: 1rem;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+        background-color: transparent;
+    }
+
+    .cp p {
+        margin: 0;
+        padding: 0;
+
+        color: white;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+
+    /* Whole dark footer/contact background */
+    .bkg {
+        background-color: rgb(63, 62, 62);
+    }
+}

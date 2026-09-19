@@ -12,11 +12,20 @@ body{
     font-weight: 600;
     font-style: normal;
     background: #b6b5b6;
-
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge legacy */
 }
 
 html{
     scroll-behavior:smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge legacy */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
 
 p{
@@ -224,7 +233,8 @@ b:hover{
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    height: auto;
+    min-height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -361,7 +371,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 20px;
+    margin-top: 10px;
     pointer-events: auto  ;
 
 }
@@ -537,6 +547,31 @@ section {
 /* Experience */
 #experience{
   position: relative;
+  min-height: auto;
+  margin: 0 2rem;
+}
+
+.experience-details-container {
+  margin-top: 0;
+  width: 100%;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 1.75rem;
+  margin-top: 2rem;
+}
+
+.experience-card {
+  margin-top :-30px;
+  min-height: 86%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .experience-sub-title{
@@ -546,6 +581,46 @@ section {
 .exp-margin{
   margin-top: 10px;
   text-align: left;
+  flex: 1;
+}
+
+.text-container {
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 1100px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+
+  .skills-feature-grid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  #experience {
+    margin: 0 1rem;
+  }
+
+  .experience-details-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .experience-card {
+    padding: 1rem;
+    margin-top: 0;
+  }
+
+  .skills-feature-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -553,9 +628,37 @@ section {
 
 #skills {
   position: relative;
+  display: block;
 }
 
+.skills-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
 
+.skills-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem 0 2rem;
+}
+
+.skill-feature-card {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(242, 240, 240);
+}
+
+.skill-pill {
+  background: #4a4a4a;
+  color: #4fdfff;
+  border-radius: 999px;
+  padding: 0.9rem 2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
 
 .skills-details-container {
   display: flex;
@@ -631,30 +734,6 @@ article .icon {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CONTACT */
 
 #contact {
@@ -666,6 +745,7 @@ article .icon {
   
   .bkg{
     background-color:rgb(63, 62, 62);
+
   }
 
   .section__text__pp1{

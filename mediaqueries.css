@@ -318,3 +318,30 @@
         height: 30px;
     }
 }
+
+
+
+@media screen and (max-width: 768px) {
+
+    #profile {
+        position: relative;
+    }
+
+    #profile .profile-arrow {
+        display: block !important;
+        position: absolute !important;
+
+        left: auto !important;
+        right: 25px !important;
+        bottom: 25px !important;
+
+        width: 32px;
+        height: auto;
+
+        transform: none !important;
+
+        z-index: 9999 !important;
+        pointer-events: auto !important;
+        cursor: pointer;
+    }
+}
